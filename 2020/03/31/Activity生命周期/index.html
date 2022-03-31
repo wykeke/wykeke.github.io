@@ -46,27 +46,33 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="wy">
-<meta property="og:url" content="https:&#x2F;&#x2F;wykeke.github.io&#x2F;index.html">
+  <meta name="description" content="先看一下Android官方提供的一张经典的活动生命周期示意图| 方法 |描述  |下一个||–|–|–||onCreate()  |在第一次创建活动时调用  | onStart()|| onStart() |在活动有不可见变为可见时调用  |onResume()或onStop() ||onResume()  |在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态  |onPa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Activity生命周期">
+<meta property="og:url" content="https:&#x2F;&#x2F;wykeke.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F&#x2F;index.html">
 <meta property="og:site_name" content="wy">
+<meta property="og:description" content="先看一下Android官方提供的一张经典的活动生命周期示意图| 方法 |描述  |下一个||–|–|–||onCreate()  |在第一次创建活动时调用  | onStart()|| onStart() |在活动有不可见变为可见时调用  |onResume()或onStop() ||onResume()  |在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态  |onPa">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;b7db3bd7a5644038897823ac4c83d63a.png">
+<meta property="article:published_time" content="2020-03-31T13:36:05.000Z">
+<meta property="article:modified_time" content="2022-03-31T13:37:02.736Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;b7db3bd7a5644038897823ac4c83d63a.png">
 
-<link rel="canonical" href="https://wykeke.github.io/">
+<link rel="canonical" href="https://wykeke.github.io/2020/03/31/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false
+    isHome: false,
+    isPost: true
   };
 </script>
 
-  <title>wy</title>
+  <title>Activity生命周期 | wy</title>
   
 
 
@@ -171,285 +177,10 @@
             
 
   <div class="posts-expand">
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wykeke.github.io/2022/03/13/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wy">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/13/test/" class="post-title-link" itemprop="url">test</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-03-13 13:24:53" itemprop="dateCreated datePublished" datetime="2022-03-13T13:24:53+08:00">2022-03-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
   
   
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wykeke.github.io/2022/01/29/testt/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wy">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/01/29/testt/" class="post-title-link" itemprop="url">testt</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-01-29 21:25:47" itemprop="dateCreated datePublished" datetime="2022-01-29T21:25:47+08:00">2022-01-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-03-29 21:33:22" itemprop="dateModified" datetime="2022-03-29T21:33:22+08:00">2022-03-29</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wykeke.github.io/2020/12/20/JSON%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wy">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/12/20/JSON%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90/" class="post-title-link" itemprop="url">JSON数据解析</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-12-20 18:16:12" itemprop="dateCreated datePublished" datetime="2020-12-20T18:16:12+08:00">2020-12-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-03-31 21:44:14" itemprop="dateModified" datetime="2022-03-31T21:44:14+08:00">2022-03-31</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="JSON数据解析——彩云天气api"><a href="#JSON数据解析——彩云天气api" class="headerlink" title="JSON数据解析——彩云天气api"></a>JSON数据解析——彩云天气api</h1><h2 id="彩云天气API"><a href="#彩云天气API" class="headerlink" title="彩云天气API"></a>彩云天气API</h2><p>首先在彩云天气官网注册一个账号，注册地址是：</p>
-<blockquote>
-<p><a href="https://dashboard.caiyunapp.com/" target="_blank" rel="noopener">https://dashboard.caiyunapp.com/</a></p>
-</blockquote>
-<p>注册之后可查看API文档<br><img src="https://img-blog.csdnimg.cn/cae323c6370341ac84929cebdc9b1e8d.png" alt="令牌图片"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/12/20/JSON%E6%95%B0%E6%8D%AE%E8%A7%A3%E6%9E%90/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wykeke.github.io/2020/07/28/DBS/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wy">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/28/DBS/" class="post-title-link" itemprop="url">DBS</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-07-28 21:49:05" itemprop="dateCreated datePublished" datetime="2020-07-28T21:49:05+08:00">2020-07-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-03-13 14:07:56" itemprop="dateModified" datetime="2022-03-13T14:07:56+08:00">2022-03-13</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>testtesttest</p>
-<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a><strong>绪论</strong></h1><h1 id="数据库系统概述"><a href="#数据库系统概述" class="headerlink" title="数据库系统概述"></a><strong>数据库系统概述</strong></h1><p><em>数据库的4个基本概念</em><br>数据、数据库、数据库管理系统是与数据库技术密切相关的四个基本概念。<br>1、数据<br>定义：描述事物的符号记录称为数据。<br>数据的含义称为数据的语义，数据与其语义是不可分的。<br>记录是计算机中表示和存储数据的一种格式或一种方法。</p>
-<p>2、数据库<br>数据库是长期存储在计算机内、有组织的、可共享的大量数据的集合。<br>数据库中的数据按一定的数据模型组织、描述和存储、具有较小的冗余度、较高的数据独立性和易扩展性，<br>并可为各种用户共享。概括的讲，数据库数据具有永久存储、有组织和可共享三个基本特点。</p>
-<p>3、数据库管理系统<br>数据库管理系统是位于用户与操作系统之间的一层管理软件。<br>数据库管理系统和操作软件一样，是计算机的基础软件，也是一个大型复杂的软件系统。<br>主要功能：<br>（1）、数据定义功能<br>数据库管理系统提供数据定义语言DDL。用户通过它可以方便地对数据库中的数据对象的组成与结构进行定义。</p>
-<p>（2）、数据组织、存储和管理<br>数据库管理系统要分类组织，存储和管理各种数据，包括数据字典，用户数据。设计的存取路径等。<br>要确定以何种文件结构和存取方式在存储级上组织这些数据，如何实现数据之间的联系。<br>数据组织和存储的基本目标是提高存储空间利用率和方便存取，提取多种存取方法，<br>（如索引查找、hash查找、顺序查找）来提高存储效率。</p>
-<p>（3）、数据操纵功能<br>数据操纵语言DML:用户可以使用它操纵数据，实现对数据库的基本操作，如查询、插入、删除和修改等。</p>
-<p>（4）、数据库的事务管理和运行管理<br>数据库在建立、运用和维护时由数还力系统统一管理和控制，以保证事务的正确运行，<br>保证数据的安全性、完整性、多用户对数据的并发使用及发生故障后的系统恢复。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/07/28/DBS/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
     <link itemprop="mainEntityOfPage" href="https://wykeke.github.io/2020/03/31/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -463,8 +194,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/31/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="post-title-link" itemprop="url">Activity生命周期</a>
+          Activity生命周期
         </h1>
 
         <div class="post-meta">
@@ -495,7 +225,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>先看一下Android官方提供的一张经典的活动生命周期示意图<br><img src="https://img-blog.csdnimg.cn/b7db3bd7a5644038897823ac4c83d63a.png" alt="活动生命周期示意图"><br>| 方法 |描述  |下一个|<br>|–|–|–|<br>|onCreate()  |在第一次创建活动时调用  | onStart()|<br>| onStart() |在活动有不可见变为可见时调用  |onResume()或onStop() |<br>|onResume()  |在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态  |onPause() |<br>|onPause() | 在系统准备去启动或者恢复另一个活动时调用 | onResume()或onStop|<br>| onStop() |在活动完全不可见时调用  |onRestart()或onDestory() |<br>| onDestory() |在活动被销毁之前调用  | 无|<br>| onRestart |在活动由停止状态变为运行状态之前调用，也就是活动重新被启动  | onStart()|</p>
+        <p>先看一下Android官方提供的一张经典的活动生命周期示意图<br><img src="https://img-blog.csdnimg.cn/b7db3bd7a5644038897823ac4c83d63a.png" alt="活动生命周期示意图"><br>| 方法 |描述  |下一个|<br>|–|–|–|<br>|onCreate()  |在第一次创建活动时调用  | onStart()|<br>| onStart() |在活动有不可见变为可见时调用  |onResume()或onStop() |<br>|onResume()  |在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态  |onPause() |<br>|onPause() | 在系统准备去启动或者恢复另一个活动时调用 | onResume()或onStop|<br>| onStop() |在活动完全不可见时调用  |onRestart()或onDestory() |<br>| onDestory() |在活动被销毁之前调用  | 无|<br>| onRestart |在活动由停止状态变为运行状态之前调用，也就是活动重新被启动  | onStart()|</p>
 <p><strong>现在我们通过一个实例来更加直观地体验Activity的生命周期</strong></p>
 <p>&emsp;&emsp;新建一个项目，现在有了一个MainActivity，还需要分别创建两个子活动——NormalActivity和DialogActivity，在MainActivity中注册两个按钮点击事件分别用于启动两个子活动，并且在MainActivity的七个回调方法分别打印了一句话，这样就可以通过观察日志的方式更直观地理解活动的生命周期</p>
 <p><strong>MainActivity代码如下</strong></p>
@@ -539,232 +269,36 @@
 <hr>
 <p>&emsp;&emsp;掌握了Activity的生命周期我们才能在开发的时候写出更流畅的活动切换，给用户更好的体验感。熟悉了生命周期才能更好的考虑一些问题，比如在连续跳转多个Activity后怎么直接退出程序？总不能让用户一直点BACK键直到退出吧；又比如由于activity与别的组件生命周期的不同造成的内存泄漏问题等等，这些都是对生命周期进一步了解之后需要解决的问题。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wykeke.github.io/2020/01/13/java/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wy">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/13/java/" class="post-title-link" itemprop="url">java</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-01-13 23:04:36" itemprop="dateCreated datePublished" datetime="2020-01-13T23:04:36+08:00">2020-01-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-03-13 12:49:07" itemprop="dateModified" datetime="2022-03-13T12:49:07+08:00">2022-03-13</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="开始我的java学习之旅啦"><a href="#开始我的java学习之旅啦" class="headerlink" title="开始我的java学习之旅啦"></a>开始我的java学习之旅啦</h1><p><strong>Hello World!</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class Hello&#123;				&#x2F;&#x2F;新建类</span><br><span class="line">	public static void main(String[] args)&#123;		&#x2F;&#x2F;主方法</span><br><span class="line">	System.out.println(Hello World!);		&#x2F;&#x2F;输出</span><br><span class="line">	&#x2F;&#x2F;println输出结果后自动换行，print输出结果后不换行</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Java程序中的main()方法必须声明为<code>public static void</code><br>String[] args是一个字符串类型的数组，它是main()方法的参数</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/13/java/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/13/java/" rel="prev" title="java">
+      <i class="fa fa-chevron-left"></i> java
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/28/DBS/" rel="next" title="DBS">
+      DBS <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wykeke.github.io/2019/12/15/newpapername/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wy">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/15/newpapername/" class="post-title-link" itemprop="url">newpapername</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-12-15 19:55:42" itemprop="dateCreated datePublished" datetime="2019-12-15T19:55:42+08:00">2019-12-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-11-05 15:58:07" itemprop="dateModified" datetime="2021-11-05T15:58:07+08:00">2021-11-05</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://wykeke.github.io/2019/12/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="wy">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/15/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-12-15 13:32:49" itemprop="dateCreated datePublished" datetime="2019-12-15T13:32:49+08:00">2019-12-15</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -815,6 +349,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、跳转活动时的状态变化"><span class="nav-number">1.</span> <span class="nav-text">一、跳转活动时的状态变化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、旋转屏时的状态变化"><span class="nav-number">2.</span> <span class="nav-text">二、旋转屏时的状态变化</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
