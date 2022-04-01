@@ -46,16 +46,16 @@
   };
 </script>
 
-  <meta name="description" content="先看一下Android官方提供的一张经典的活动生命周期示意图| 方法 |描述  |下一个||–|–|–||onCreate()  |在第一次创建活动时调用  | onStart()|| onStart() |在活动有不可见变为可见时调用  |onResume()或onStop() ||onResume()  |在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态  |onPa">
+  <meta name="description" content="先看一下Android官方提供的一张经典的活动生命周期示意图">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Activity生命周期">
 <meta property="og:url" content="https:&#x2F;&#x2F;wykeke.github.io&#x2F;2020&#x2F;03&#x2F;31&#x2F;Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F&#x2F;index.html">
 <meta property="og:site_name" content="wy">
-<meta property="og:description" content="先看一下Android官方提供的一张经典的活动生命周期示意图| 方法 |描述  |下一个||–|–|–||onCreate()  |在第一次创建活动时调用  | onStart()|| onStart() |在活动有不可见变为可见时调用  |onResume()或onStop() ||onResume()  |在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态  |onPa">
+<meta property="og:description" content="先看一下Android官方提供的一张经典的活动生命周期示意图">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;b7db3bd7a5644038897823ac4c83d63a.png">
 <meta property="article:published_time" content="2020-03-31T13:36:05.000Z">
-<meta property="article:modified_time" content="2022-03-31T13:37:02.736Z">
+<meta property="article:modified_time" content="2022-04-01T01:22:26.749Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;b7db3bd7a5644038897823ac4c83d63a.png">
@@ -211,7 +211,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-03-31 21:37:02" itemprop="dateModified" datetime="2022-03-31T21:37:02+08:00">2022-03-31</time>
+                <time title="Modified: 2022-04-01 09:22:26" itemprop="dateModified" datetime="2022-04-01T09:22:26+08:00">2022-04-01</time>
               </span>
 
           
@@ -225,7 +225,53 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>先看一下Android官方提供的一张经典的活动生命周期示意图<br><img src="https://img-blog.csdnimg.cn/b7db3bd7a5644038897823ac4c83d63a.png" alt="活动生命周期示意图"><br>| 方法 |描述  |下一个|<br>|–|–|–|<br>|onCreate()  |在第一次创建活动时调用  | onStart()|<br>| onStart() |在活动有不可见变为可见时调用  |onResume()或onStop() |<br>|onResume()  |在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态  |onPause() |<br>|onPause() | 在系统准备去启动或者恢复另一个活动时调用 | onResume()或onStop|<br>| onStop() |在活动完全不可见时调用  |onRestart()或onDestory() |<br>| onDestory() |在活动被销毁之前调用  | 无|<br>| onRestart |在活动由停止状态变为运行状态之前调用，也就是活动重新被启动  | onStart()|</p>
+        <p>先看一下Android官方提供的一张经典的活动生命周期示意图<br><img src="https://img-blog.csdnimg.cn/b7db3bd7a5644038897823ac4c83d63a.png" alt="活动生命周期示意图"></p>
+<a id="more"></a>
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+<th>下一个</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>onCreate()</td>
+<td>在第一次创建活动时调用</td>
+<td>onStart()</td>
+</tr>
+<tr>
+<td>onStart()</td>
+<td>在活动有不可见变为可见时调用</td>
+<td>onResume()或onStop()</td>
+</tr>
+<tr>
+<td>onResume()</td>
+<td>在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态</td>
+<td>onPause()</td>
+</tr>
+<tr>
+<td>onPause()</td>
+<td>在系统准备去启动或者恢复另一个活动时调用</td>
+<td>onResume()或onStop</td>
+</tr>
+<tr>
+<td>onStop()</td>
+<td>在活动完全不可见时调用</td>
+<td>onRestart()或onDestory()</td>
+</tr>
+<tr>
+<td>onDestory()</td>
+<td>在活动被销毁之前调用</td>
+<td>无</td>
+</tr>
+<tr>
+<td>onRestart</td>
+<td>在活动由停止状态变为运行状态之前调用，也就是活动重新被启动</td>
+<td>onStart()</td>
+</tr>
+</tbody></table>
 <p><strong>现在我们通过一个实例来更加直观地体验Activity的生命周期</strong></p>
 <p>&emsp;&emsp;新建一个项目，现在有了一个MainActivity，还需要分别创建两个子活动——NormalActivity和DialogActivity，在MainActivity中注册两个按钮点击事件分别用于启动两个子活动，并且在MainActivity的七个回调方法分别打印了一句话，这样就可以通过观察日志的方式更直观地理解活动的生命周期</p>
 <p><strong>MainActivity代码如下</strong></p>

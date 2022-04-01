@@ -403,7 +403,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-03-13 14:07:56" itemprop="dateModified" datetime="2022-03-13T14:07:56+08:00">2022-03-13</time>
+                <time title="Modified: 2022-04-01 09:24:08" itemprop="dateModified" datetime="2022-04-01T09:24:08+08:00">2022-04-01</time>
               </span>
 
           
@@ -418,12 +418,7 @@
 
       
           <p>testtesttest</p>
-<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a><strong>绪论</strong></h1><h1 id="数据库系统概述"><a href="#数据库系统概述" class="headerlink" title="数据库系统概述"></a><strong>数据库系统概述</strong></h1><p><em>数据库的4个基本概念</em><br>数据、数据库、数据库管理系统是与数据库技术密切相关的四个基本概念。<br>1、数据<br>定义：描述事物的符号记录称为数据。<br>数据的含义称为数据的语义，数据与其语义是不可分的。<br>记录是计算机中表示和存储数据的一种格式或一种方法。</p>
-<p>2、数据库<br>数据库是长期存储在计算机内、有组织的、可共享的大量数据的集合。<br>数据库中的数据按一定的数据模型组织、描述和存储、具有较小的冗余度、较高的数据独立性和易扩展性，<br>并可为各种用户共享。概括的讲，数据库数据具有永久存储、有组织和可共享三个基本特点。</p>
-<p>3、数据库管理系统<br>数据库管理系统是位于用户与操作系统之间的一层管理软件。<br>数据库管理系统和操作软件一样，是计算机的基础软件，也是一个大型复杂的软件系统。<br>主要功能：<br>（1）、数据定义功能<br>数据库管理系统提供数据定义语言DDL。用户通过它可以方便地对数据库中的数据对象的组成与结构进行定义。</p>
-<p>（2）、数据组织、存储和管理<br>数据库管理系统要分类组织，存储和管理各种数据，包括数据字典，用户数据。设计的存取路径等。<br>要确定以何种文件结构和存取方式在存储级上组织这些数据，如何实现数据之间的联系。<br>数据组织和存储的基本目标是提高存储空间利用率和方便存取，提取多种存取方法，<br>（如索引查找、hash查找、顺序查找）来提高存储效率。</p>
-<p>（3）、数据操纵功能<br>数据操纵语言DML:用户可以使用它操纵数据，实现对数据库的基本操作，如查询、插入、删除和修改等。</p>
-<p>（4）、数据库的事务管理和运行管理<br>数据库在建立、运用和维护时由数还力系统统一管理和控制，以保证事务的正确运行，<br>保证数据的安全性、完整性、多用户对数据的并发使用及发生故障后的系统恢复。</p>
+<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a><strong>绪论</strong></h1><h1 id="数据库系统概述"><a href="#数据库系统概述" class="headerlink" title="数据库系统概述"></a><strong>数据库系统概述</strong></h1><p><em>数据库的4个基本概念</em><br>数据、数据库、数据库管理系统是与数据库技术密切相关的四个基本概念。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/07/28/DBS/#more" rel="contents">
@@ -481,7 +476,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-03-31 21:37:02" itemprop="dateModified" datetime="2022-03-31T21:37:02+08:00">2022-03-31</time>
+                <time title="Modified: 2022-04-01 09:22:26" itemprop="dateModified" datetime="2022-04-01T09:22:26+08:00">2022-04-01</time>
               </span>
 
           
@@ -495,50 +490,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>先看一下Android官方提供的一张经典的活动生命周期示意图<br><img src="https://img-blog.csdnimg.cn/b7db3bd7a5644038897823ac4c83d63a.png" alt="活动生命周期示意图"><br>| 方法 |描述  |下一个|<br>|–|–|–|<br>|onCreate()  |在第一次创建活动时调用  | onStart()|<br>| onStart() |在活动有不可见变为可见时调用  |onResume()或onStop() |<br>|onResume()  |在准备与用户进行交互时调用，此时活动一定位于返回栈的栈顶，并且处于运行状态  |onPause() |<br>|onPause() | 在系统准备去启动或者恢复另一个活动时调用 | onResume()或onStop|<br>| onStop() |在活动完全不可见时调用  |onRestart()或onDestory() |<br>| onDestory() |在活动被销毁之前调用  | 无|<br>| onRestart |在活动由停止状态变为运行状态之前调用，也就是活动重新被启动  | onStart()|</p>
-<p><strong>现在我们通过一个实例来更加直观地体验Activity的生命周期</strong></p>
-<p>&emsp;&emsp;新建一个项目，现在有了一个MainActivity，还需要分别创建两个子活动——NormalActivity和DialogActivity，在MainActivity中注册两个按钮点击事件分别用于启动两个子活动，并且在MainActivity的七个回调方法分别打印了一句话，这样就可以通过观察日志的方式更直观地理解活动的生命周期</p>
-<p><strong>MainActivity代码如下</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span>  <span class="keyword">final</span>  String TAG = <span class="string">"MainActivity"</span>;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        Log.d(TAG, <span class="string">"调用了 onCreate"</span>);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">       </span><br><span class="line">        Button startNormalActivity = (Button) findViewById(R.id.start_normal_activity);</span><br><span class="line">        Button startDialogActivity = (Button) findViewById(R.id.start_dialog_activity);</span><br><span class="line">        startNormalActivity.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">                Intent intent = <span class="keyword">new</span> Intent(MainActivity.<span class="keyword">this</span>,NormalActivity<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">                startActivity(intent);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        startDialogActivity.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">                Intent intent = <span class="keyword">new</span> Intent(MainActivity.<span class="keyword">this</span>,DialogActivity<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">                startActivity(intent);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onStart</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onStart();</span><br><span class="line">        Log.d(TAG,<span class="string">"调用了 onStart"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onResume</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onResume();</span><br><span class="line">        Log.d(TAG, <span class="string">"调用了 onResume"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onPause</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onPause();</span><br><span class="line">        Log.d(TAG, <span class="string">"调用了 onPause"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onStop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onStop();</span><br><span class="line">        Log.d(TAG, <span class="string">"调用了 onStop"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onDestroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onDestroy();</span><br><span class="line">        Log.d(TAG, <span class="string">"调用了 onDestroy"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onRestart</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onRestart();</span><br><span class="line">        Log.d(TAG, <span class="string">"调用了 onRestart"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onSaveInstanceState</span><span class="params">(@NonNull Bundle outState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onSaveInstanceState(outState);</span><br><span class="line">        Log.d(TAG, <span class="string">"onSaveInstanceState: 保存状态"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onRestoreInstanceState</span><span class="params">(@NonNull Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onRestoreInstanceState(savedInstanceState);</span><br><span class="line">        Log.d(TAG, <span class="string">"onRestoreInstanceState: 恢复状态"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="一、跳转活动时的状态变化"><a href="#一、跳转活动时的状态变化" class="headerlink" title="一、跳转活动时的状态变化"></a>一、跳转活动时的状态变化</h2><p>1.启动Activity：系统会先调用onCreate方法，然后调用onStart方法，最后调用onResume，Activity进入运行状态。<br><strong>直接运行程序，系统启动MainActivity，log日志打印如下：</strong></p>
-<blockquote>
-<p>调用了 onCreate<br>调用了 onStart<br>调用了 onResume</p>
-</blockquote>
-<p>2.当前Activity被其他Activity覆盖其上或被锁屏,或者有dialog弹出时：系统会调用onPause方法，暂停当前Activity的执行。<br><strong>点击第一个按钮跳转到NormalActivity，MainActivity被NormalActivity覆盖，log日志打印如下：</strong></p>
-<blockquote>
-<p>调用了 onPause<br>调用了 onStop<br>onSaveInstanceState: 保存状态</p>
-</blockquote>
-<p>&emsp;&emsp;在启动NormalActivity时，MainActivity会调用onSaveInstanceState保存ui状态，比如假设MainActivity有一个编辑框，在其中输入了文本，然后跳转到另一个活动，这时MainActivity由于系统内存被回收掉，再点击BACK返回时就会发现文本不见了，这个用户体验感是非常不好的，因此Activity提供了一个onSaveInstanceState方法，用来解决活动被回收时临时数据得不到保存的问题</p>
-<p>&emsp;&emsp;<strong>注：由于NormalActivity已经把MainActivity完全遮挡住，因此onPause()和onStop()都会得到执行</strong></p>
-<p>3.当前Activity由被覆盖状态回到前台或解锁屏：系统会调用onResume方法，再次进入运行状态。<br><strong>按下BACK键返回MainActivity，log日志打印如下：</strong></p>
-<blockquote>
-<p>调用了 onRestart<br>调用了 onStart<br>调用了 onResume</p>
-</blockquote>
-<p>&emsp;&emsp;<strong>由于之前MainActivity已经进入了停止状态，所以onRestart()方法会得到执行，而onCreate()方法不会执行，因为MainActivity并没有重新创建</strong></p>
-<p>4.第2种情况中，若当前Activity并没有被完全覆盖，则只会调用onPause()方法，不会调用onStop()方法<br><strong>点击第二个按钮跳转到DialogActivity，MainActivity被DialogActivity部分遮挡，log日志打印如下</strong></p>
-<blockquote>
-<p>调用了 onPause</p>
-</blockquote>
-<p><strong>同样的，由于MainActivity只是暂停状态，所以按下BACK键返回MainActivity时也只有onResume()方法被调用，log日志打印如下：</strong></p>
-<blockquote>
-<p>调用了 onResume</p>
-</blockquote>
-<p>5.用户退出当前Activity：系统先调用onPause方法，然后调用onStop方法，最后调用onDestory方法，结束当前Activity。<br><strong>在MainActivity按下BACK键退出程序，log日志打印如下：</strong></p>
-<blockquote>
-<p>调用了 onPause<br>调用了 onStop<br>调用了 onDestroy</p>
-</blockquote>
-<h2 id="二、旋转屏时的状态变化"><a href="#二、旋转屏时的状态变化" class="headerlink" title="二、旋转屏时的状态变化"></a>二、旋转屏时的状态变化</h2><p>我们给MainActivity再加一个按钮，写上点击按钮旋转屏幕事件，代码如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">changeScreenbtn.setOnClickListener(<span class="keyword">new</span> View.OnClickListener() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//得到屏幕状态</span></span><br><span class="line">        Configuration configuration = getResources().getConfiguration();</span><br><span class="line">        <span class="comment">//如果是横屏就转为竖屏，如果是竖屏就转为横屏</span></span><br><span class="line">        <span class="keyword">if</span> (configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)&#123;</span><br><span class="line">            MainActivity.<span class="keyword">this</span>.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            MainActivity.<span class="keyword">this</span>.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p><strong>现在点击按钮旋转屏幕，log日志打印如下：</strong></p>
-<blockquote>
-<p>调用了 onPause<br>调用了 onStop<br>onSaveInstanceState: 保存状态<br>调用了 onDestroy<br>调用了 onCreate<br>调用了 onStart<br>onRestoreInstanceState: 恢复状态<br>调用了 onResume</p>
-</blockquote>
-<p>&emsp;&emsp;我们可以看到这其中经历了非常多的状态变化，简单分析一下就能得知：在旋转屏幕时，先后经历了销毁当前Activity和重新创建Activity的过程，且在销毁前调用了onSaveInstanceState()方法，在运行前调用了onRestoreInstanceState()方法</p>
-<p>&emsp;&emsp;<strong>因此，如果在需要进行屏幕旋转操作时，需要重写这两个方法为我们保存和恢复数据，否则单单在文本编辑框中写下的文本旋转屏幕后就一定不存在了，因为旋转屏幕已经经历了从销毁到重新创建的过程</strong></p>
-<hr>
-<p>&emsp;&emsp;掌握了Activity的生命周期我们才能在开发的时候写出更流畅的活动切换，给用户更好的体验感。熟悉了生命周期才能更好的考虑一些问题，比如在连续跳转多个Activity后怎么直接退出程序？总不能让用户一直点BACK键直到退出吧；又比如由于activity与别的组件生命周期的不同造成的内存泄漏问题等等，这些都是对生命周期进一步了解之后需要解决的问题。</p>
-
+          <p>先看一下Android官方提供的一张经典的活动生命周期示意图<br><img src="https://img-blog.csdnimg.cn/b7db3bd7a5644038897823ac4c83d63a.png" alt="活动生命周期示意图"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/31/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
